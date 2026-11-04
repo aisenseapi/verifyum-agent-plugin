@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "verifyum",
+  "version": "0.1.0",
+  "description": "Privacy-preserving file proofs on Solana. Files are hashed locally and only a commitment is anchored. No account, wallet or API key.",
+  "author": {
+    "name": "AI SENSE AS",
+    "email": "post@aisense.no",
+    "url": "https://verifyum.com"
+  },
+  "homepage": "https://verifyum.com/agents",
+  "repository": "https://github.com/aisenseapi/verifyum-agent-plugin",
+  "license": "MIT",
+  "keywords": ["proof", "timestamp", "solana", "hash", "provenance", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "verifyum": { "trust": "untrusted" },
+        "verifyum-local": { "trust": "untrusted" }
+      }
+    }
+  }
+}
