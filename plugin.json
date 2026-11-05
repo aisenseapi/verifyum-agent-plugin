@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "verifyum",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Privacy-preserving file proofs on Solana. Files are hashed locally and only a commitment is anchored. No account, wallet or API key.",
   "author": {
     "name": "AI SENSE AS",

@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "verifyum": {
+      "type": "http",
+      "url": "https://api.verifyum.com/mcp"
+    },
+    "verifyum-local": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "verifyum-mcp@0.1.1"]
+    }
+  }
+}

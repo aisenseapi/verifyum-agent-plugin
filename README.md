@@ -9,6 +9,10 @@ Solana Mainnet, with one skill that tells the agent when and how to use them.
 | `plugin.json` | The manifest: name `verifyum`, version, author, license, and Hermes Agent trust for both servers |
 | `mcp.json` | Two servers. `verifyum` is the hosted server at `https://api.verifyum.com/mcp` (Streamable HTTP, no authentication). `verifyum-local` runs the `verifyum-mcp` npm package on this machine with `npx` |
 | `skills/verifyum-proofs/SKILL.md` | Which tool fits which need, the rules on permanence, privacy and limits, and a read-only check with a known answer |
+| `.claude-plugin/`, `.mcp.json` | Claude Code: the plugin manifest, a marketplace with this one plugin, and the same two servers |
+| `.agents/plugins/marketplace.json` | Codex: a marketplace with this one plugin. Codex reads `plugin.json` and `mcp.json` itself |
+| `gemini-extension.json` | Gemini CLI: the extension manifest with the same two servers |
+| `.antigravity-plugin/`, `mcp_config.json`, `assets/logo.svg` | Antigravity: the manifest with display name, logo and starter prompts, and the same two servers |
 
 The package itself contains no code. `verifyum-local` downloads the exact npm
 release `verifyum-mcp@0.1.1` (MIT, JavaScript source) the first time it
@@ -16,7 +20,33 @@ starts.
 
 ## Install
 
-Any client that loads Agent Plugins can load this directory. The
+Claude Code:
+
+```text
+/plugin marketplace add aisenseapi/verifyum-agent-plugin
+/plugin install verifyum@verifyum
+```
+
+Codex, which then lists Verifyum among the plugins it can install:
+
+```bash
+codex plugin marketplace add aisenseapi/verifyum-agent-plugin
+```
+
+Gemini CLI:
+
+```bash
+gemini extensions install https://github.com/aisenseapi/verifyum-agent-plugin
+```
+
+Antigravity, from a local copy:
+
+```bash
+git clone https://github.com/aisenseapi/verifyum-agent-plugin
+agy plugin install ./verifyum-agent-plugin
+```
+
+Any other client that loads Agent Plugins can load this directory. The
 [compatible clients](https://agent-plugins.org/compatible-clients) page links
 each client's own instructions.
 

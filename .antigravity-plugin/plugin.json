@@ -1,0 +1,21 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "verifyum",
+  "displayName": "Verifyum",
+  "version": "0.2.0",
+  "description": "Privacy-preserving file proofs on Solana. Files are hashed locally and only a commitment is anchored. No account, wallet or API key.",
+  "logo": "assets/logo.svg",
+  "suggestedPrompts": [
+    "Check Verifyum proof 72c38s8rrqa4vjhw6dxsvmbqkq and report its status, network and verdict",
+    "What does a Verifyum proof show, and what does it not prove?",
+    "How would I prove a file existed today with Verifyum without uploading it?"
+  ],
+  "author": {
+    "name": "AI SENSE AS",
+    "url": "https://verifyum.com"
+  },
+  "homepage": "https://verifyum.com/agents",
+  "repository": "https://github.com/aisenseapi/verifyum-agent-plugin",
+  "license": "MIT",
+  "keywords": ["proof", "timestamp", "solana", "hash", "provenance", "mcp"]
+}

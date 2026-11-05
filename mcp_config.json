@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "verifyum": {
+      "serverUrl": "https://api.verifyum.com/mcp"
+    },
+    "verifyum-local": {
+      "command": "npx",
+      "args": ["-y", "verifyum-mcp@0.1.1"]
+    }
+  }
+}

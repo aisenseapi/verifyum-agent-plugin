@@ -1,0 +1,14 @@
+{
+  "name": "verifyum",
+  "version": "0.2.0",
+  "description": "Privacy-preserving file proofs on Solana. Files are hashed locally and only a commitment is anchored. No account, wallet or API key.",
+  "mcpServers": {
+    "verifyum": {
+      "httpUrl": "https://api.verifyum.com/mcp"
+    },
+    "verifyum-local": {
+      "command": "npx",
+      "args": ["-y", "verifyum-mcp@0.1.1"]
+    }
+  }
+}

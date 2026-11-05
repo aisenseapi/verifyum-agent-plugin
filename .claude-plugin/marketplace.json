@@ -1,0 +1,21 @@
+{
+  "name": "verifyum",
+  "owner": {
+    "name": "AI SENSE AS",
+    "email": "post@aisense.no",
+    "url": "https://verifyum.com"
+  },
+  "metadata": {
+    "description": "Verifyum file proofs on Solana for agents. One plugin.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "verifyum",
+      "source": "./",
+      "description": "Privacy-preserving file proofs on Solana. Files are hashed locally and only a commitment is anchored. No account, wallet or API key.",
+      "version": "0.2.0",
+      "homepage": "https://verifyum.com/agents"
+    }
+  ]
+}
